@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <title>React System Admin</title>
+    <meta name="description" content="Uberental System Admin" />
+    <meta name="robots" content="noarchive,index,follow" />
+    <link id="canonical" rel="canonical" href="https://geneat.vn" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1"
+        name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=100" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- META FOR FACEBOOK -->
+    <meta property="fb:app_id" content="110837687935741" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:site_name" content="geneat.vn" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://inmergers.com/assets/images/inmerger_default.jpg" />
+    <meta property="og:image:width" content="596" />
+    <meta property="og:image:height" content="596" />
+    <meta property="og:url" itemprop="url" content="https://geneat.vn" />
+    <meta property="og:title" itemprop="headline" content="Angular" />
+    <meta property="og:description"
+        content="Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular." />
+    <!-- END META FOR FACEBOOK -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@aAngular" />
+    <meta name="twitter:creator" content="@aAngular" />
+    <meta name="twitter:url" content="https://geneat.vn" />
+    <meta name="twitter:image" content="https://geneat.vn/assets/images/banner-img-1.jpg" />
+    <meta name="twitter:title" content="Angular" />
+    <meta name="twitter:description"
+        content="Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular." />
+    <!-- End Twitter Card -->
+    <base href="/" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="google-signin-client_id"
+        content="458714151950-fv7bp4u656lk3bel41agq6jh2j4b27pb.apps.googleusercontent.com" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3TLVBTM19"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+
+        gtag("config", "G-L3TLVBTM19");
+    </script>
+    <link href="/assets/styles/theme.css" rel="stylesheet" />
+
+    <!--  vanilla-lazyload 17 -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17/dist/lazyload.min.js"></script>
+    <script>
+        setTimeout(() => {
+            new LazyLoad({
+                callback_error: el => (el.src = "https://via.placeholder.com/1x1/?text="),
+            });
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="/assets/images/loader.gif" alt="Loader" />
+    </div>
+
+    <header class="header">
+        <div>
+            <div class="menu">
+                <ul class="mega-menu">
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li>
+                        <a href="#">Lorem ipsum</a>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li>
+                                <a href="#">Lorem ipsum</a>
+                                <ul>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li>
+                                        <a href="#">Lorem ipsum</a>
+                                        <ul>
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Lorem ipsum</a>
+                        <ul class="mega">
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="line-right">
+                    <button data-dropdown="">
+                        <img class="lazy w-6" data-src="https://placehold.co/560x560/?text=Language" alt="" />
+                    </button>
+                    <template>
+                        <a href="#">Action</a>
+                        <a href="#">Another action</a>
+                        <a href="#">Something else here</a>
+                    </template>
+                </div>
+
+                <div class="social-network">
+                    <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+                        <svg aria-hidden="true">
+                            <use href="/assets/icons/sprite.svg#icon-facebook" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                        <svg>
+                            <use href="/assets/icons/sprite.svg#icon-linkin" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="line-left">
+                    <span class="hamburger" data-menu="#menu">
+                        <span class="top-bun"></span>
+                        <span class="meat"></span>
+                        <span class="bottom-bun"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section data-title="Drawer">
+        <div class="drawer" id="menu">
+            <div class="relative top-0">
+                <ul class="mega-menu col">
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li>
+                        <a href="#">Lorem ipsum</a>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li>
+                                <a href="#">Lorem ipsum</a>
+                                <ul>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li>
+                                        <a href="#">Lorem ipsum</a>
+                                        <ul>
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                            <li><a href="#">Lorem ipsum</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Lorem ipsum</a>
+                        <ul class="mega">
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li><a href="#">Lorem ipsum 1</a></li>
+                                    <li><a href="#">Lorem ipsum 2</a></li>
+                                    <li><a href="#">Lorem ipsum 3</a></li>
+                                    <li><a href="#">Lorem ipsum 4</a></li>
+                                    <li><a href="#">Lorem ipsum 5</a></li>
+                                    <li><a href="#">Lorem ipsum 6</a></li>
+                                    <li><a href="#">Lorem ipsum 7</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+            </div>
+            <div class="relative">
+                <div class="mt-4">
+                    <a class="inline-flex" href="https://www.facebook.com" target="_blank" rel="noreferrer">
+                        <svg>
+                            <use href="/assets/icons/sprite.svg#icon-facebook" />
+                        </svg>
+                    </a>
+                    <a class="inline-flex" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                        <svg>
+                            <use href="/assets/icons/sprite.svg#icon-linkin" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="flex-center py-3">
+                    <span>
+                        <svg>
+                            <use href="/assets/icons/sprite.svg#icon-map" />
+                        </svg>
+                    </span>
+                    <div class="leading-5">
+                        <strong>Lorem ipsum</strong>
+                        <br />
+                        <span class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </div>
+                </div>
+                <div class="flex-center border-t py-3">
+                    <svg>
+                        <use href="/assets/icons/sprite.svg#icon-mail" />
+                    </svg>
+                    <div class="leading-5">
+                        <strong>Lorem ipsum</strong>
+                        <br />
+                        <a class="text-sm" href="mailto:contact@ari.com.vn"> Consectetur adipiscing elit. </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-title="Google Translate">
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {
+                        pageLanguage: "vi",
+                        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                        autoDisplay: false,
+                    },
+                    "google_translate_element",
+                );
+                const value = localStorage.getItem("google-translate") || "vi";
+                const languageObj = {
+                    en: "English",
+                    vi: "Vietnamese",
+                    cn: "Chinese",
+                };
+                document.querySelectorAll(".google-language").forEach(e => {
+                    e.querySelector("use").outerHTML =
+                        '<use href="/assets/icons/sprite.svg#icon-flag-' + value + '" />';
+                    e.querySelector("span").innerText = languageObj[value];
+                });
+            }
+            function changeFunc(value, e) {
+                localStorage.setItem("google-translate", value);
+                const language = {
+                    en: "English",
+                    vi: "Vietnamese",
+                    cn: "Chinese (Traditional)",
+                };
+                let number = 2;
+                let $frame2;
+                let $frame = document.querySelector(".skiptranslate > iframe");
+                if ($frame) {
+                    $frame = $frame.contentWindow.document
+                        .getElementById(":2.finishTargetLang")
+                        .getElementsByTagName("a");
+                    if ($frame.length) $frame[0].click();
+                    else {
+                        document.getElementById(":0.targetLanguage").getElementsByTagName("a")[0].click();
+                        number = 3;
+                    }
+                } else {
+                    document.getElementById(":0.targetLanguage").getElementsByTagName("a")[0].click();
+                    number = 1;
+                }
+                $frame2 = document.getElementsByTagName("iframe");
+                const element = document.evaluate(
+                    `//span[text()='${language[value]}']`,
+                    $frame2[$frame2.length - number].contentWindow.document,
+                    null,
+                    XPathResult.FIRST_ORDERED_NODE_TYPE,
+                    null,
+                ).singleNodeValue;
+                if (element) {
+                    element.click();
+                    const languageObj = {
+                        en: "English",
+                        vi: "Vietnamese",
+                        cn: "Chinese",
+                    };
+
+                    document.querySelectorAll(".google-language").forEach(e => {
+                        e.querySelector("use").outerHTML =
+                            '<use href="/assets/icons/sprite.svg#icon-flag-' + value + '" />';
+                        e.querySelector("span").innerText = languageObj[value];
+                    });
+                } else if (value !== "vi") changeFunc("vi", e);
+            }
+            setTimeout(
+                () =>
+                    !isChrome() &&
+                    document.querySelectorAll(".google-language").forEach(e => (e.style.display = "none")),
+                200,
+            );
+
+            function isChrome() {
+                const isChromium = window.chrome;
+                const winNav = window.navigator;
+
+                return (
+                    winNav.userAgent.match("CriOS") ||
+                    (isChromium !== null &&
+                        typeof isChromium !== "undefined" &&
+                        winNav.vendor === "Google Inc." &&
+                        !typeof window.opr !== "undefined" &&
+                        !winNav.userAgent.indexOf("Edg") > -1)
+                );
+            }
+        </script>
+
+        <!--  translate google -->
+        <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+            type="text/javascript"></script>
+
+        <style>
+            #google_translate_element,
+            .skiptranslate>iframe,
+            iframe.skiptranslate,
+            #goog-gt-tt {
+                display: none !important;
+            }
+        </style>
+        <div id="google_translate_element"></div>
+
+        <button class="google-language btn flex-center bg-primary-500" data-dropdown="">
+            <svg class="size-5" aria-hidden="true">
+                <use href="/assets/icons/sprite.svg#icon-flag-vi" />
+            </svg>
+            <span>Vietnamese</span>
+            <svg class="size-3 rotate-90" aria-hidden="true">
+                <use href="/assets/icons/sprite.svg#icon-arrow" />
+            </svg>
+        </button>
+        <template>
+            <button class="flex-center p-2" onclick="changeFunc('vi', this)" value="vi">
+                <svg class="size-4" aria-hidden="true">
+                    <use href="/assets/icons/sprite.svg#icon-flag-vi" />
+                </svg>
+                Vietnamese
+            </button>
+            <button class="flex-center p-2" onclick="changeFunc('en', this)" value="en">
+                <svg class="size-4" aria-hidden="true">
+                    <use href="/assets/icons/sprite.svg#icon-flag-en" />
+                </svg>
+                English
+            </button>
+            <button class="flex-center p-2" onclick="changeFunc('cn', this)" value="cn">
+                <svg class="size-4" aria-hidden="true">
+                    <use href="/assets/icons/sprite.svg#icon-flag-cn" />
+                </svg>
+                Chinese
+            </button>
+        </template>
+    </section>
+
+    <section data-title="Collapse">
+        <div>
+            <button class="handle-collapse flex-center">
+                Bán đất Đông Anh
+                <svg class="size-3" aria-hidden="true">
+                    <use href="/assets/icons/sprite.svg#icon-arrow" />
+                </svg>
+            </button>
+            <ul class="ml-2 mt-2 h-0 overflow-hidden">
+                <li><a href="/#">Bán đất Bắc Hồng</a></li>
+                <li><a href="/#">Bán đất Bắc Hồng1</a></li>
+                <li><a href="/#">Bán đất Bắc Hồng2</a></li>
+                <li><a href="/#">Bán đất Bắc Hồng3</a></li>
+                <li><a href="/#">Bán đất Bắc Hồng4</a></li>
+                <li><a href="/#">Bán đất Bắc Hồng5</a></li>
+            </ul>
+        </div>
+        <script>
+            const time = {};
+            document.querySelectorAll(".handle-collapse").forEach(e =>
+                e.addEventListener("click", () => {
+                    if (!time[e.id])
+                        time[e.id] = gsap.timeline({
+                            defaults: { duration: 0.25, ease: "power1.inOut" },
+                        });
+                    else {
+                        time[e.id][time[e.id].reversed() ? "play" : "reverse"]();
+                        return;
+                    }
+
+                    time[e.id].to(e.parentElement.querySelector("ul"), { height: "auto" }, "0");
+                    time[e.id].to(e.querySelector("svg"), { transform: "rotate(90deg)" }, "0");
+                }),
+            );
+        </script>
+    </section>
+
+    <section data-title="Form">
+        <link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3/dist/pretty-checkbox.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/choices.js@10/public/assets/scripts/choices.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/choices.js@10/public/assets/styles/choices.min.css" rel="stylesheet" />
+
+        <script src="https://cdn.jsdelivr.net/npm/range-slider-input@2/dist/rangeslider.umd.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/range-slider-input@2/dist/style.min.css" rel="stylesheet" />
+
+        <form novalidate name="register"
+            onsubmit="setTimeout(() => console.log(window._FORM_['register'], window._FORMSTATUS_['register']))">
+            <div class="group">
+                <label for="username">Your name</label>
+                <input id="username" name="username2" type="text" placeholder="username" required />
+            </div>
+            <div class="group">
+                <label for="email">Your name</label>
+                <input id="email" name="email2" type="email" placeholder="email" required />
+            </div>
+            <div class="group">
+                <label for="password">Your password</label>
+                <input id="password" name="password" type="password" data-min-length="4" data-max-length="6"
+                    placeholder="password" required />
+            </div>
+            <div class="group">
+                <label for="passwordConfirm">Your password</label>
+                <input id="passwordConfirm" name="passwordConfirm" type="password" data-min-length="4"
+                    data-max-length="6" data-compare="password" data-message="Mật khẩu không khớp"
+                    placeholder="password" required />
+            </div>
+            <div class="group">
+                <label for="phone">Your phone</label>
+                <input id="phone" name="phone" data-regex="^\d+$" data-message="Định dạng điện thoại không đúng"
+                    type="tel" placeholder="phone" required />
+            </div>
+            <div class="group">
+                <label for="message">Your name</label>
+                <textarea id="message" name="message" placeholder="message" required></textarea>
+            </div>
+            <div class="group">
+                <label for="hobbies">Hobbies</label>
+                <div class="pretty checkbox">
+                    <input type="checkbox" value="a" name="hobbies[]" data-min-length="2" />
+                    <div class="state">
+                        <svg aria-hidden="true">
+                            <use href="/assets/icons/sprite.svg#icon-checkbox" />
+                        </svg>
+                        <label for="hobbies[]">A</label>
+                    </div>
+                </div>
+                <div class="pretty checkbox">
+                    <input type="checkbox" value="b" name="hobbies[]" data-min-length="2" />
+                    <div class="state">
+                        <svg aria-hidden="true">
+                            <use href="/assets/icons/sprite.svg#icon-checkbox" />
+                        </svg>
+                        <label for="hobbies[]">B</label>
+                    </div>
+                </div>
+            </div>
+            <div class="group">
+                <label for="contactMethod">Preferred Contact Method</label>
+                <div class="pretty radio">
+                    <input type="radio" name="contactMethod" value="on" required />
+                    <div class="state">
+                        <label for="contactMethod">On</label>
+                    </div>
+                </div>
+                <div class="pretty radio">
+                    <input type="radio" name="contactMethod" value="off" required />
+                    <div class="state">
+                        <label for="contactMethod">Off</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group">
+                <label for="heard">Your name</label>
+                <select id="heard" name="heard" required="">
+                    <option value="">Choose..</option>
+                    <option value="press">Press</option>
+                    <option value="net">Internet</option>
+                    <option value="mouth">Word of mouth</option>
+                    <option value="other">Other..</option>
+                </select>
+            </div>
+            <div class="group">
+                <label for="heard">Your name</label>
+                <input type="range" /><!-- hidden -->
+            </div>
+
+            <button class="btn bg-primary-500" type="submit" name="register">Submit</button>
+        </form>
+    </section>
+
+    <section data-title="Handlebars">
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@4/dist/handlebars.js"></script>
+        <div id="element-handlebars"></div>
+        <template>
+            <p>Hello, my name is {{name}}. I am from {{hometown}}. I have {{kids.length}} kids:</p>
+            <ul>
+                {{#kids}}
+                <li class="handle-dialog" data-test="{{../datass}}">{{name}} is {{age}}</li>
+                {{/kids}}
+            </ul>
+        </template>
+        <script>
+            const element = document.getElementById("element-handlebars");
+            if (element.nextElementSibling) {
+                const template = Handlebars.compile(element.nextElementSibling.innerHTML);
+                const data = {
+                    datass: JSON.stringify({
+                        name: "Alan",
+                        hometown: "Somewhere, TX",
+                        kids: [
+                            { name: "Jimmy", age: "12" },
+                            { name: "Sally", age: "4" },
+                        ],
+                    }),
+                    name: "Alan",
+                    hometown: "Somewhere, TX",
+                    kids: [
+                        { name: "Jimmy", age: "12" },
+                        { name: "Sally", age: "4" },
+                    ],
+                };
+                element.innerHTML = template(data);
+            }
+
+            Array.from(document.getElementsByClassName("handle-dialog")).forEach(el =>
+                el.addEventListener("click", () => {
+                    if (element) {
+                        const template = Handlebars.compile(element.nextElementSibling.innerHTML);
+                        const data = {
+                            name: "1Alan",
+                            hometown: "1Somewhere, TX",
+                            kids: [{ name: "1Jimmy", age: "112" }],
+                        };
+                        console.log(template(data));
+                    }
+                }),
+            );
+        </script>
+    </section>
+
+    <section data-title="Slide Show">
+        <!--  swiper 10  -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!--  gsap 3  -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+        <div class="slide-show">
+            <button class="arrow" id="button-prev">
+                <svg class="size-5 rotate-180" aria-hidden="true">
+                    <use href="/assets/icons/sprite.svg#icon-arrow" />
+                </svg>
+            </button>
+            <button class="arrow right" id="button-next">
+                <svg class="size-5" aria-hidden="true">
+                    <use href="/assets/icons/sprite.svg#icon-arrow" />
+                </svg>
+            </button>
+
+            <div id="handlebars-swiper"></div>
+            <template>
+                <div class="swiper mySwiper h-96 w-full">
+                    <div class="swiper-wrapper">
+                        {{#slides}}
+                        <div class="swiper-slide">
+                            <article>
+                                <h1 class="gsap left">{{title}}</h1>
+                                <p class="gsap top">{{subTitle}}</p>
+                                <ul class="gsap right">
+                                    {{#list}}
+                                    <li>{{this}}</li>
+                                    {{/list}}
+                                </ul>
+                                <button class="btn handle-dialog gsap bottom">Get Started</button>
+                            </article>
+                            <img class="lazy gsap zoom" alt="Row 01, col 01" data-src="{{image}}" />
+                        </div>
+                        {{/slides}}
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </template>
+
+            <script>
+                const handlebarsSwiper = document.getElementById("handlebars-swiper");
+                if (handlebarsSwiper.nextElementSibling) {
+                    const template = Handlebars.compile(handlebarsSwiper.nextElementSibling.innerHTML);
+                    const data = {
+                        slides: [
+                            {
+                                title: "Praesent sed congue odio, eget consequat ante",
+                                subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                                list: [
+                                    "Aenean lacinia nunc sed est aliquet",
+                                    "Morbi pulvinar pulvinar finibus",
+                                    "Vestibulum ultrices",
+                                    "Nullam eget odio eros",
+                                ],
+                                image: "https://placehold.co/440x560?text=Slider1",
+                            },
+                            {
+                                title: "Aenean tempor faucibus sapien vel euismod",
+                                subTitle:
+                                    "LorVestibulum ultrices, erat ac tempus feugiat, metus tellus vehicula sem, eu accumsan magna eros eget diam",
+                                list: [
+                                    "Ut sollicitudin tincidunt pellentesque",
+                                    "Nulla volutpat augue non dictum convallis",
+                                    "In hac habitasse platea dictumst",
+                                    "Donec aliquam in risus vitae feugiat",
+                                ],
+                                image: "https://placehold.co/440x560?text=Show2",
+                            },
+                        ],
+                    };
+                    handlebarsSwiper.innerHTML = template(data);
+                }
+            </script>
+        </div>
+    </section>
+
+    <section data-title="Glightbox">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3/dist/css/glightbox.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/glightbox@3/dist/js/glightbox.min.js"></script>
+        <div id="handlebars-glightbox"></div>
+        <template>
+            <nav class="grid-images">
+                {{#images}}
+                <a class="glightbox" href="https://biati-digital.github.io/glightbox/demo/img/large/gm{{this}}.jpg">
+                    <span></span>
+                    <img class="lazy" data-src="https://biati-digital.github.io/glightbox/demo/img/small/gm{{this}}.jpg"
+                        alt="image" />
+                </a>
+                {{/images}}
+            </nav>
+        </template>
+        <script>
+            const handlebarsGlightbox = document.getElementById("handlebars-glightbox");
+            if (handlebarsGlightbox.nextElementSibling) {
+                const template = Handlebars.compile(handlebarsGlightbox.nextElementSibling.innerHTML);
+                const data = {
+                    images: [1, 2, 3, 4, 5, 6],
+                };
+                handlebarsGlightbox.innerHTML = template(data);
+            }
+            GLightbox({});
+        </script>
+    </section>
+
+    <section data-title="Show Notification">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <div class="flex gap-2">
+            <button class="btn bg-success-500" id="success" type="button">Success</button>
+            <button class="btn bg-warning-500" id="warning" type="button">Warning</button>
+            <button class="btn bg-info-500" id="confirm" type="button">Info</button>
+            <button class="btn bg-error-500" id="error" type="button">Error</button>
+        </div>
+        <script>
+            document
+                .getElementById("success")
+                .addEventListener("click", () => Message.success({ text: "Success" }));
+            document
+                .getElementById("warning")
+                .addEventListener("click", () => Message.warning({ text: "Warning" }));
+            document
+                .getElementById("confirm")
+                .addEventListener("click", () => Message.info({ text: "Info" }));
+            document
+                .getElementById("error")
+                .addEventListener("click", () => Message.error({ text: "Error" }));
+        </script>
+    </section>
+
+    <section data-title="Effect link">
+        <div class="px-10 py-1">
+            <div class="py-1"><a class="effect-line" href="#">Left to Right Effect</a></div>
+            <div class="py-1"><a class="effect-line right" href="#">Right to Left Effect</a></div>
+            <div class="py-1"><a class="effect-line center" href="#">Center two side Effect</a></div>
+            <div class="py-1"><a class="effect-line both-sides" href="#">Both side Effect</a></div>
+            <div class="py-1"><a class="effect-line-two" href="#">Two Left to Right Effect</a></div>
+            <div class="py-1">
+                <a class="effect-line-two right" href="#">Two Right to Left Effect</a>
+            </div>
+            <div class="py-1">
+                <a class="effect-line-two reverse" href="#">Two Right to Left Effect</a>
+            </div>
+            <div class="py-1">
+                <a class="effect-line-two reverse-right" href="#">Two Right to Left Effect</a>
+            </div>
+            <div class="py-1">
+                <a class="effect-line-reverse" href="#">Left Right Lines to Top and Bottom Effect</a>
+            </div>
+            <div class="py-1">
+                <a class="effect-swipe" data-swipe-text="Changing Text" href="#">
+                    <span>Swipe Text Effect</span>
+                </a>
+            </div>
+            <div class="py-1">
+                <a class="effect-swipe horizontal" data-swipe-text="Changing Text" href="#">
+                    <span>Swipe Text Effect</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section data-title="Effect link">
+        <div class="px-10 py-1">
+            <div class="py-1">
+                <button class="btn grow bg-primary-500" type="button">Grow Effect</button>
+            </div>
+            <div class="py-1">
+                <button class="btn shrink bg-primary-500" type="button">Shrink Effect</button>
+            </div>
+            <div class="py-1">
+                <button class="btn fill bg-primary-500" type="button">
+                    <span>Left Fill Effect</span>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn fill right bg-primary-500" type="button">
+                    <span>Right Fill Effect</span>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn fill bottom bg-primary-500" type="button">
+                    <span>Bottom Fill Effect</span>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn fill top bg-primary-500" type="button">
+                    <span>Top Fill Effect</span>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn fill vertical bg-primary-500" type="button">
+                    <span>Vertical Fill Effect</span>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn fill horizontal bg-primary-500" type="button">
+                    <span>Horizontal Fill Effect</span>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn corner bg-primary-500" type="button">Left Top - Right Bottom</button>
+            </div>
+            <div class="py-1">
+                <button class="btn corner reverse bg-primary-500" type="button">
+                    Right Top - Left Bottom
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn svg bg-primary-500" type="button">
+                    <span>Icon Top</span>
+                    <svg class="bg-primary-500">
+                        <use href="/assets/icons/sprite.svg#icon-arrow" />
+                    </svg>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn svg bottom bg-primary-500" type="button">
+                    <span>Icon Bottom</span>
+                    <svg class="bg-primary-500">
+                        <use href="/assets/icons/sprite.svg#icon-arrow" />
+                    </svg>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn circle bg-primary-500" type="button">
+                    <span>Circle Fill Left Button</span>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn circle right bg-primary-500" type="button">
+                    <span>Circle Fill Right Button</span>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn aware bg-primary-500" type="button">
+                    <span>Mouse Position Aware</span>
+                    <div></div>
+                </button>
+            </div>
+            <div class="py-1">
+                <button class="btn only-svg bg-primary-500" type="button">
+                    <svg>
+                        <use href="/assets/icons/sprite.svg#icon-arrow" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll(".aware").forEach(e => {
+                e.addEventListener("mouseenter", event => {
+                    event.target.querySelector("div").style.top = event.offsetY + "px";
+                    event.target.querySelector("div").style.left = event.offsetX + "px";
+                });
+            });
+        </script>
+    </section>
+
+    <section class="px-10 py-1" data-title="Spinner">
+        <div class="py-1">
+            <div class="circular-spinner"></div>
+        </div>
+        <div class="py-1">
+            <div class="growing-circle-spinner"></div>
+        </div>
+        <div class="py-1">
+            <div class="dot-container">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+            </div>
+        </div>
+        <div class="py-1">
+            <div class="heartbit-loader"></div>
+        </div>
+        <div class="py-1">
+            <div class="rotating-squares"></div>
+        </div>
+        <div class="py-1">
+            <div class="wave">
+                <div class="step step1"></div>
+                <div class="step step2"></div>
+                <div class="step step3"></div>
+                <div class="step step4"></div>
+                <div class="step step5"></div>
+            </div>
+        </div>
+        <div class="py-1">
+            <div class="colorful">
+                <div class="square square1"></div>
+                <div class="square square2"></div>
+                <div class="square square3"></div>
+                <div class="square square4"></div>
+            </div>
+        </div>
+        <div class="py-1">
+            <div class="rotating-square"></div>
+        </div>
+        <div class="py-1">
+            <div class="clock"></div>
+        </div>
+    </section>
+
+    <section class="px-10 py-1" data-title="Animation">
+        <div class="py-1">
+            <div class="writer">
+                <div class="typing-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="card-wrapper first">
+                <div class="front-card">
+                    <img src="https://gratisography.com/wp-content/uploads/2025/03/gratisography-robot-portrait-1036x780.jpg"
+                        alt="" />
+                    <h5 class="p-1">Lorem ipsum dolor</h5>
+                    <p class="px-1">
+                        consectetur adipisicing elit. Nemo repellat delectus quidem at nostrum eaque aliquam
+                        rem. Nihil, expedita.
+                    </p>
+                </div>
+                <div class="back-card">
+                    <div class="text-center">
+                        <h4 class="pb-5">$2,399.000</h4>
+                        <button class="btn border">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper second">
+                <div class="front-card">
+                    <img src="https://gratisography.com/wp-content/uploads/2025/03/gratisography-robot-portrait-1036x780.jpg"
+                        alt="" />
+                    <h5 class="p-1">Lorem ipsum dolor</h5>
+                    <p class="px-1">
+                        consectetur adipisicing elit. Nemo repellat delectus quidem at nostrum eaque aliquam
+                        rem. Nihil, expedita.
+                    </p>
+                </div>
+                <div class="back-card">
+                    <div class="text-center">
+                        <h4 class="pb-5">$2,399.000</h4>
+                        <button class="btn border">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper third">
+                <div class="front-card">
+                    <img src="https://gratisography.com/wp-content/uploads/2025/03/gratisography-robot-portrait-1036x780.jpg"
+                        alt="" />
+                    <h5 class="p-1">Lorem ipsum dolor</h5>
+                    <p class="px-1">
+                        consectetur adipisicing elit. Nemo repellat delectus quidem at nostrum eaque aliquam
+                        rem. Nihil, expedita.
+                    </p>
+                </div>
+                <div class="back-card">
+                    <div class="text-center">
+                        <h4 class="pb-5">$2,399.000</h4>
+                        <button class="btn border">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-title="Chart">
+        <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+        <div class="h-52 w-full" id="echarts"></div>
+    </section>
+
+    <section data-title="Input Mask">
+        <script src="https://cdn.jsdelivr.net/npm/imask@7/dist/imask.min.js"></script>
+        <form>
+            <div class="group">
+                <label for="username">Phone</label>
+                <input id="phone-mask" />
+            </div>
+        </form>
+        <script>
+            IMask(document.getElementById("phone-mask"), {
+                mask: "+{7}(000)000-00-00",
+            });
+        </script>
+    </section>
+
+    <section data-title="Dropdown and Tooltip">
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1"></script>
+        <button data-tooltip="This is a hover tooltip!">Hover me!</button>
+        <button data-tooltip="This is a hover tooltip!1">Hover me!</button>
+        <button data-tooltip="This is a hover tooltip!2">Hover me!</button>
+        <button data-tooltip="This is a hover tooltip!3">Hover me!</button>
+        <button data-tooltip="This is a hover tooltip!4">Hover me!</button>
+        <button data-dropdown="">Hover dropdown!</button>
+        <template>
+            <a href="#">Action</a>
+            <a href="#">Another action</a>
+            <a href="#">Something else here</a>
+        </template>
+    </section>
+
+    <section data-title="Pagination">
+        <nav class="pagination" role="navigation">
+            <a href="#">
+                <svg>
+                    <use href="/assets/icons/sprite.svg#icon-arrow" />
+                </svg>
+            </a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">
+                <svg aria-hidden="true">
+                    <use href="/assets/icons/sprite.svg#icon-arrow" />
+                </svg>
+            </a>
+        </nav>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

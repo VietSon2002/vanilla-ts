@@ -1,0 +1,1501 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8" />
+  <title>React System Admin</title>
+  <meta name="description" content="Uberental System Admin" />
+  <meta name="robots" content="noarchive,index,follow" />
+  <link id="canonical" rel="canonical" href="https://geneat.vn" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Font Awesome (để hiển thị icon Instagram) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1"
+    name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=100" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- META FOR FACEBOOK -->
+  <meta property="fb:app_id" content="110837687935741" />
+  <meta property="og:locale" content="vi_VN" />
+  <meta property="og:site_name" content="geneat.vn" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://inmergers.com/assets/images/inmerger_default.jpg" />
+  <meta property="og:image:width" content="596" />
+  <meta property="og:image:height" content="596" />
+  <meta property="og:url" itemprop="url" content="https://geneat.vn" />
+  <meta property="og:title" itemprop="headline" content="Angular" />
+  <meta property="og:description"
+    content="Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular." />
+  <!-- END META FOR FACEBOOK -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@aAngular" />
+  <meta name="twitter:creator" content="@aAngular" />
+  <meta name="twitter:url" content="https://geneat.vn" />
+  <meta name="twitter:image" content="https://geneat.vn/assets/images/banner-img-1.jpg" />
+  <meta name="twitter:title" content="Angular" />
+  <meta name="twitter:description"
+    content="Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces with Angular." />
+  <!-- End Twitter Card -->
+  <base href="/" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="google-signin-client_id"
+    content="458714151950-fv7bp4u656lk3bel41agq6jh2j4b27pb.apps.googleusercontent.com" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3TLVBTM19"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-L3TLVBTM19');
+  </script>
+  <link href="/assets/styles/theme.css" rel="stylesheet" />
+
+  <!--  vanilla-lazyload 17 -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17/dist/lazyload.min.js"></script>
+  <script>
+    setTimeout(() => {
+      new LazyLoad({
+        callback_error: el => (el.src = 'https://via.placeholder.com/1x1/?text='),
+      });
+    }, 1000);
+  </script>
+
+  <!--  line-awesome 1  -->
+  <link href="https://cdn.jsdelivr.net/npm/line-awesome@1/dist/line-awesome/css/line-awesome.min.css"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div>
+        <div class="flex items-center gap-1">
+          <span
+            class="text-purple-500 text-lg bg-primary rounded-full w-8 h-8 flex items-center justify-center box-border">
+            <svg class="w-6 h-6 fill-black">
+              <use xlink:href="/assets/icons/sprite.svg#icon-phone"></use>
+            </svg>
+          </span>
+
+
+          <span>(528) 456–7592</span>
+        </div>
+      </div>
+      <div>
+        <div>
+          <span><svg>
+              <use xlink:href="/assets/icons/sprite.svg#icon-email"></use>
+            </svg></span>
+          <span>info@example.com</span>
+        </div>
+        <div>
+          <span><svg>
+              <use xlink:href="/assets/icons/sprite.svg#icon-clock"></use>
+            </svg></span>
+          <span>Mon - Fri 10:00 to 6:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="header-wrap">
+      <div>
+        <div>
+          <img src="/assets/icons/logo.svg" alt="FDI Logo" />
+        </div>
+        <nav class="nav-links">
+          <div class="nav-item">
+            <button data-dropdown="" class="nav-button">
+              HOME
+              <svg class="nav-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <template>
+              <a href="#">HOME 01</a>
+              <a href="#">HOME 02</a>
+              <a href="#">HOME 03</a>
+              <a href="#">HOME 04</a>
+            </template>
+          </div>
+          <div class="nav-item">
+            <button data-dropdown="" class="nav-button">
+              PAGES
+              <svg class="nav-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <template>
+              <a href="#">HOME 01</a>
+              <a href="#">HOME 02</a>
+              <a href="#">HOME 03</a>
+              <a href="#">HOME 04</a>
+            </template>
+          </div>
+          <div class="nav-item">
+            <button data-dropdown="" class="nav-button">
+              SHOP
+              <svg class="nav-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <template>
+              <a href="#">HOME 01</a>
+              <a href="#">HOME 02</a>
+              <a href="#">HOME 03</a>
+              <a href="#">HOME 04</a>
+            </template>
+          </div>
+          <div class="nav-item">
+            <button data-dropdown="" class="nav-button">
+              SERVICES
+              <svg class="nav-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <template>
+              <a href="#">HOME 01</a>
+              <a href="#">HOME 02</a>
+              <a href="#">HOME 03</a>
+              <a href="#">HOME 04</a>
+            </template>
+          </div>
+          <div class="nav-item">
+            <button data-dropdown="" class="nav-button">
+              RESEARCH
+              <svg class="nav-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <template>
+              <a href="#">HOME 01</a>
+              <a href="#">HOME 02</a>
+              <a href="#">HOME 03</a>
+              <a href="#">HOME 04</a>
+            </template>
+          </div>
+          <div class="nav-item">
+            <button data-dropdown="" class="nav-button">
+              BLOGS
+              <svg class="nav-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <template>
+              <a href="#">HOME 01</a>
+              <a href="#">HOME 02</a>
+              <a href="#">HOME 03</a>
+              <a href="#">HOME 04</a>
+            </template>
+          </div>
+          <div class="nav-item">
+            <button data-dropdown="" class="nav-button">
+              CONTACT
+            </button>
+            <template>
+              <a href="#">HOME 01</a>
+              <a href="#">HOME 02</a>
+              <a href="#">HOME 03</a>
+              <a href="#">HOME 04</a>
+            </template>
+          </div>
+        </nav>
+
+      </div>
+      <div class="social-actions">
+        <svg class="icon-search me-4">
+          <use xlink:href="/assets/icons/sprite.svg#icon-search"></use>
+        </svg>
+
+        <div class="social">
+          <a href="#" class="social-btn">
+            <svg class="social-icon">
+              <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="social-btn">
+            <svg class="social-icon">
+              <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="social-btn">
+            <svg class="social-icon">
+              <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+            </svg>
+          </a>
+        </div>
+
+        <a href="#" class="appointment-btn">Make Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section-start">
+    <div class="swiper mySwiper w-full h-full" data-slides="1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/banner/01.png" alt="img" class="w-full h-auto" />
+          <div class="image-overlay"></div>
+          <div class="slide-content">
+            <h6>Lab Research Excellence</h6>
+            <h2><span>High Laboratory</span><br>Quality Services</h2>
+            <p>Welcome to our research laboratory center...</p>
+            <div class="buttons">
+              <a href="#" class="appointment-btn">Explore More</a>
+              <a href="#" class="appointment-btn-secondary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="assets/images/banner/02.png" alt="img" class="w-full h-auto" />
+          <div class="image-overlay"></div>
+          <div class="slide-content">
+            <h6>Lab Research Excellence</h6>
+            <h2><span>High Laboratory</span><br>Quality Services</h2>
+            <p>Welcome to our research laboratory center...</p>
+            <div class="buttons">
+              <a href="#" class="appointment-btn">Explore More</a>
+              <a href="#" class="appointment-btn-secondary">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-button-prev">
+        <svg class="nav-icon" width="24" height="24">
+          <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg width="24" height="24">
+          <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-start">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="item">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+            </svg>
+            <div class="featured-title">
+              <h5>Microbiology</h5>
+              <p>This includes bacteria, viruses, fungi, and parasites.</p>
+              <a href="#" class="read-more">
+                Read more
+                <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+            </svg>
+            <div class="featured-title">
+              <h5>Microbiology</h5>
+              <p>This includes bacteria, viruses, fungi, and parasites.</p>
+              <a href="#" class="read-more">
+                Read more
+                <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+            </svg>
+            <div class="featured-title">
+              <h5>Microbiology</h5>
+              <p>This includes bacteria, viruses, fungi, and parasites.</p>
+              <a href="#" class="read-more">
+                Read more
+                <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="item">
+            <svg class="nav-icon" width="24" height="24">
+              <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+            </svg>
+            <div class="featured-title">
+              <h5>Microbiology</h5>
+              <p>This includes bacteria, viruses, fungi, and parasites.</p>
+              <a href="#" class="read-more">
+                Read more
+                <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="arquee-start">
+    <div class="scroll-wrapper">
+      <div class="scroll-fade left"></div>
+      <div class="scroll-fade right"></div>
+
+      <div class="marquee-text">
+        <span>Laboratory</span>
+        <span>Science</span>
+        <span>Research</span>
+        <span>Laboratory</span>
+        <span>Science</span>
+        <span>Research</span>
+
+        <span>Laboratory</span>
+        <span>Science</span>
+        <span>Research</span>
+        <span>Laboratory</span>
+        <span>Science</span>
+        <span>Research</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about-start">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="images">
+          <div class="img-row">
+            <img src="/assets/images/avatar/ava01.png" alt="">
+            <img src="/assets/images/avatar/ava02.png" alt="">
+          </div>
+          <img src="/assets/images/avatar/ava03.png" alt="" class="img-full">
+        </div>
+        <div class="about-us">
+          <div>
+            <h6>About Us</h6>
+            <h5>Experiment With The Best</h5>
+            <h5>Lab Test And Service</h5>
+          </div>
+          <p>
+            With a belief that knowledge is power, we connect our patients directly with their results so they have
+            valuable health information when they need it most.
+          </p>
+          <div>
+            <span><svg class="nav-icon" width="24" height="24">
+                <use xlink:href="/assets/icons/sprite.svg#icon-double-check"></use>
+              </svg>Toxicological assessment</span>
+            <span><svg class="nav-icon" width="24" height="24">
+                <use xlink:href="/assets/icons/sprite.svg#icon-double-check"></use>
+              </svg>Toxicological assessment</span>
+            <span><svg class="nav-icon" width="24" height="24">
+                <use xlink:href="/assets/icons/sprite.svg#icon-double-check"></use>
+              </svg>Toxicological assessment</span>
+            <span><svg class="nav-icon" width="24" height="24">
+                <use xlink:href="/assets/icons/sprite.svg#icon-double-check"></use>
+              </svg>Toxicological assessment</span>
+          </div>
+          <hr>
+          <div>
+            <div>
+              <img class="w-45" src="/assets/images/sing.png" alt="">
+            </div>
+            <div class="circle-avatar">
+              <img class="w-16" src="/assets/images/avatar/avatar.png" alt="">
+              <div>
+                <h6>Dr. Abigail George</h6>
+                <label class="text-primary" for="">Laboratory Specialist</label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="appointment-btn">More about us</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="service-start">
+    <div class="container">
+      <div>
+        <div>
+          <div class="theme-title">
+            <h6>Our Services</h6>
+            <h3>Comprehensive Solutions<br>For Every Challenge.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-contain">
+      <div class="swiper mySwiper-4 ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="service-item">
+              <div class="image-wrapper">
+                <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
+              </div>
+              <div class="icon-wrapper">
+                <svg class="nav-icon" width="80" height="80">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+                </svg>
+              </div>
+              <div class="info-wrapper">
+                <div class="content">
+                  <h6 class="title">Pharmaceutical<br />Research</h6>
+                  <p class="description">
+                    We use cutting-edge<br />
+                    technologies and…..
+                  </p>
+                  <a href="#" class="read-more">
+                    Read more
+                    <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-item">
+              <div class="image-wrapper">
+                <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
+              </div>
+              <div class="icon-wrapper">
+                <svg class="nav-icon" width="80" height="80">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+                </svg>
+              </div>
+              <div class="info-wrapper">
+                <div class="content">
+                  <h6 class="title">Pharmaceutical<br />Research</h6>
+                  <p class="description">
+                    We use cutting-edge<br />
+                    technologies and…..
+                  </p>
+                  <a href="#" class="read-more">
+                    Read more
+                    <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-item">
+              <div class="image-wrapper">
+                <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
+              </div>
+              <div class="icon-wrapper">
+                <svg class="nav-icon" width="80" height="80">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+                </svg>
+              </div>
+              <div class="info-wrapper">
+                <div class="content">
+                  <h6 class="title">Pharmaceutical<br />Research</h6>
+                  <p class="description">
+                    We use cutting-edge<br />
+                    technologies and…..
+                  </p>
+                  <a href="#" class="read-more">
+                    Read more
+                    <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-item">
+              <div class="image-wrapper">
+                <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
+              </div>
+              <div class="icon-wrapper">
+                <svg class="nav-icon" width="80" height="80">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+                </svg>
+              </div>
+              <div class="info-wrapper">
+                <div class="content">
+                  <h6 class="title">Pharmaceutical<br />Research</h6>
+                  <p class="description">
+                    We use cutting-edge<br />
+                    technologies and…..
+                  </p>
+                  <a href="#" class="read-more ">
+                    Read more
+                    <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-item">
+              <div class="image-wrapper">
+                <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
+              </div>
+              <div class="icon-wrapper">
+                <svg class="nav-icon" width="80" height="80">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+                </svg>
+              </div>
+              <div class="info-wrapper">
+                <div class="content">
+                  <h6 class="title">Pharmaceutical<br />Research</h6>
+                  <p class="description">
+                    We use cutting-edge<br />
+                    technologies and…..
+                  </p>
+                  <a href="#" class="read-more">
+                    Read more
+                    <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="service-item">
+              <div class="image-wrapper">
+                <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
+              </div>
+              <div class="icon-wrapper">
+                <svg class="nav-icon" width="80" height="80">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+                </svg>
+              </div>
+              <div class="info-wrapper">
+                <div class="content">
+                  <h6 class="title">Pharmaceutical<br />Research</h6>
+                  <p class="description">
+                    We use cutting-edge<br />
+                    technologies and…..
+                  </p>
+                  <a href="#" class="read-more">
+                    Read more
+                    <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination absolute bottom-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-start">
+    <div class="container">
+      <div class="contain">
+        <div class="left">
+          <div class="theme-title">
+            <h6>Who We Are</h6>
+            <h4>Discover Our Commitment to <span>Research Center</span></h4>
+            <p>Delivering cutting-edge scientific services with precise testing, research support, and consultation,
+              committed to excellence and advancement in every project.</p>
+          </div>
+          <div class="main-contain">
+            <div class="featured-item">
+              <div class="featured-top">
+                <svg class="nav-icon" width="120" height="120">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+                </svg>
+                <h6>Medical laboratory Technician</h6>
+              </div>
+              <hr>
+              <p>New evidence has been published on the protein dosing patients.</p>
+            </div>
+            <div class="featured-item">
+              <div class="featured-top">
+                <svg class="nav-icon" width="120" height="120">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-business-money"></use>
+                </svg>
+                <h6>Medical laboratory Technician</h6>
+              </div>
+              <hr>
+              <p>New evidence has been published on the protein dosing patients.</p>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="appointment-btn">More about us</a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="image-wrapper">
+            <img src="/assets/images/about-star-0.png" alt="About Us" />
+          </div>
+          <img class="img-2" src="/assets/images/about-star-1.png" alt="About Us" />
+          <div class="about-counter float">
+            <div class="text-center"><span>15+</span>
+              <h6>Years of Experience</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="marquee-start pb-14">
+    <div class="scroll-wrapper">
+      <div class="scroll-fade left"></div>
+      <div class="scroll-fade right"></div>
+      <div class="marquee-text">
+        <span>Our Specialist</span>
+        <span>Team Member</span>
+        <span>Expert Doctor</span>
+        <span>Our Specialist</span>
+        <span>Team Member</span>
+        <span>Expert Doctor</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-start">
+    <div class="container">
+      <div class="swiper mySwiper-4">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative">
+                <img src="/assets/images/avatar/avatar-2.png" alt="Doctor" />
+                <div class="social">
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h6>Salazar Myers</h6>
+              <p>Manager Of Lab</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative">
+                <img src="/assets/images/avatar/avatar-2.png" alt="Doctor" />
+                <div class="social">
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h6>Salazar Myers</h6>
+              <p>Manager Of Lab</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative">
+                <img src="/assets/images/avatar/avatar-2.png" alt="Doctor" />
+                <div class="social">
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h6>Salazar Myers</h6>
+              <p>Manager Of Lab</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative">
+                <img src="/assets/images/avatar/avatar-2.png" alt="Doctor" />
+                <div class="social">
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h6>Salazar Myers</h6>
+              <p>Manager Of Lab</p>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative">
+                <img src="/assets/images/avatar/avatar-2.png" alt="Doctor" />
+                <div class="social">
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h6>Salazar Myers</h6>
+              <p>Manager Of Lab</p>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative">
+                <img src="/assets/images/avatar/avatar-2.png" alt="Doctor" />
+                <div class="social">
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+                    </svg>
+                  </a>
+
+                  <a href="#" class="social-btn">
+                    <svg class="social-icon">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <h6>Salazar Myers</h6>
+              <p>Manager Of Lab</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-start pb-20">
+    <div class="container">
+      <div class="top-contain">
+        <div class="left">
+          <h6>Book An Appointment</h6>
+          <h3>Effortless Online Booking for <span>Your Laboratory Visit</span></h3>
+        </div>
+        <div class="right">
+          <p>We believe in a future where renewable energy sources play a vital role in reducing carbon emissions. We
+            provide a wide range of diagnostic services ranging from complete health check-up packages.</p>
+        </div>
+      </div>
+
+      <div class="bottom-contain">
+        <div class="left form-start">
+          <form id="contact-form" method="post" action="" class="form-wrapper">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form_name">Your Name</label>
+                <input id="form_name" name="name" type="text" placeholder="Enter Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="form_email">Email Address</label>
+                <input id="form_email" name="email" type="email" placeholder="Enter Email Address" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form_phone">Phone Number</label>
+                <input id="form_phone" name="phone" type="tel" placeholder="Enter Phone number" required />
+              </div>
+              <div class="form-group">
+                <label for="form_service">Select Service</label>
+                <select id="form_service" name="service" required>
+                  <option selected disabled>Select Service</option>
+                  <option value="1">Pathology</option>
+                  <option value="2">Diabetes</option>
+                  <option value="3">Chemical</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="form_message">Message</label>
+              <textarea id="form_message" name="message" rows="4" placeholder="Write Your Message Here..."
+                required></textarea>
+            </div>
+
+            <div class="form-submit">
+              <a href="#" class="appointment-btn uppercase"> Book an Appointment </a>
+            </div>
+          </form>
+        </div>
+
+        <div class="right">
+          <div class="primary-bg">
+            <h4>Clinic Hours</h4>
+
+            <div class="working-hours-item">
+              <span class="working-day">Mon - Tues</span>
+              <span class="working-time">09:00AM - 6:00PM</span>
+            </div>
+            <hr class="border-t border-white border-opacity-10" />
+            <div class="working-hours-item">
+              <span class="working-day">Wed - Thu</span>
+              <span class="working-time">09:00AM - 6:00PM</span>
+            </div>
+            <hr class="border-t border-white border-opacity-10" />
+            <div class="working-hours-item">
+              <span class="working-day">Fri - Sat</span>
+              <span class="working-time">09:00AM - 6:00PM</span>
+            </div>
+            <hr class="border-t border-white border-opacity-10" />
+            <div class="working-hours-item last">
+              <span class="working-day">Emergency</span>
+              <span class="working-time">24/7 Hours 7 Days</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="portfolio-start">
+    <div class="container">
+      <div class="theme-title">
+        <h6>Latest Portfolio</h6>
+        <h3>We've Done A Lot's, Check<br><span>Our Latest Research</span></h3>
+      </div>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper mySwiper-stop">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative group">
+                <img src="/assets/images/team-start.png" alt="Doctor" />
+                <div class="portfolio-desc">
+                  <span>DNA</span>
+                  <h6><a href="portfolio-single.html">Blood DNA Detect</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative group">
+                <img src="/assets/images/team-start.png" alt="Doctor" />
+                <div class="portfolio-desc">
+                  <span>DNA</span>
+                  <h6><a href="portfolio-single.html">Blood DNA Detect</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative group">
+                <img src="/assets/images/team-start.png" alt="Doctor" />
+                <div class="portfolio-desc">
+                  <span>DNA</span>
+                  <h6><a href="portfolio-single.html">Blood DNA Detect</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative group">
+                <img src="/assets/images/team-start.png" alt="Doctor" />
+                <div class="portfolio-desc">
+                  <span>DNA</span>
+                  <h6><a href="portfolio-single.html">Blood DNA Detect</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative group">
+                <img src="/assets/images/team-start.png" alt="Doctor" />
+                <div class="portfolio-desc">
+                  <span>DNA</span>
+                  <h6><a href="portfolio-single.html">Blood DNA Detect</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="profile-card">
+              <div class="relative group">
+                <img src="/assets/images/team-start.png" alt="Doctor" />
+                <div class="portfolio-desc">
+                  <span>DNA</span>
+                  <h6><a href="portfolio-single.html">Blood DNA Detect</a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="testimonial-start">
+    <div class="container">
+      <div class="top-contain">
+        <div class="flex-[5]">
+          <h6>Testimonial</h6>
+          <h3>Hear Review From Our <span>Happy Patients</span></h3>
+        </div>
+        <div class="flex-[4]">
+          <p>Our CEO Lead Bioscientist Chloe Hazell attended the talks alongside multiple tenants and companies from
+            across Wales.</p>
+        </div>
+        <div class="flex-[2]">
+          <div class="rating">
+            <h3>4.8</h3>
+            <h6>Average Rating</h6>
+          </div>
+        </div>
+      </div>
+      <hr class="w-full">
+      <div class="bottom-contain swiper mySwiper w-full">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <img src="/assets/images/testimonial-start.png" alt="Avatar" class="avatar-img" />
+            <div class="img-icon">
+              <svg class="nav-icon" width="40" height="40">
+                <use xlink:href="/assets/icons/sprite.svg#icon-flaticon"></use>
+              </svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+
+              </div>
+              <p>labozu is the best diagnostic lab in the city. I have great experience with them. The provide
+                authentic results &amp; have the best environment inside here. I highly recommend them. It is
+                nothing
+                but a website with a catalog of products and the possibility of buying them by visitors.</p>
+              <div class="testimonial-caption">
+                <h5>Vitoria Carrillo</h5>
+                <label>Lab Specialist</label>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/testimonial-start.png" alt="Avatar" class="avatar-img" />
+            <div class="img-icon">
+              <svg class="nav-icon" width="40" height="40">
+                <use xlink:href="/assets/icons/sprite.svg#icon-flaticon"></use>
+              </svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+
+              </div>
+              <p>labozu is the best diagnostic lab in the city. I have great experience with them. The provide
+                authentic results &amp; have the best environment inside here. I highly recommend them. It is
+                nothing
+                but a website with a catalog of products and the possibility of buying them by visitors.</p>
+              <div class="testimonial-caption">
+                <h5>Vitoria Carrillo</h5>
+                <label>Lab Specialist</label>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/images/testimonial-start.png" alt="Avatar" class="avatar-img" />
+            <div class="img-icon">
+              <svg class="nav-icon" width="40" height="40">
+                <use xlink:href="/assets/icons/sprite.svg#icon-flaticon"></use>
+              </svg>
+            </div>
+            <div class="testimonial-content">
+              <div class="testimonial-rating">
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon-arrow" width="24" height="24">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-star"></use>
+                </svg>
+
+              </div>
+              <p>labozu is the best diagnostic lab in the city. I have great experience with them. The provide
+                authentic results &amp; have the best environment inside here. I highly recommend them. It is
+                nothing
+                but a website with a catalog of products and the possibility of buying them by visitors.</p>
+              <div class="testimonial-caption">
+                <h5>Vitoria Carrillo</h5>
+                <label>Lab Specialist</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  </section>
+
+  <section class="brand-logo-start">
+    <div class="container">
+      <div>
+        <!-- Title -->
+        <div class="title">
+          <h6>Trusted Partner:</h6>
+        </div>
+
+        <!-- Swiper -->
+        <div>
+          <div class="swiper client-swiper">
+            <div class="swiper-wrapper">
+              <!-- Repeat these slides -->
+              <div class="swiper-slide">
+                <div class="clients-logo">
+                  <img src="/assets/images/client/01.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-logo">
+                  <img src="/assets/images/client/02.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-logo">
+                  <img src="/assets/images/client/03.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-logo">
+                  <img src="/assets/images/client/04.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-logo">
+                  <img src="/assets/images/client/05.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-logo">
+                  <img src="/assets/images/client/06.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-logo">
+                  <img src="/assets/images/client/07.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="clients-logo">
+                  <img src="/assets/images/client/08.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+  </section>
+
+  <section class="blog-start">
+    <div class="container">
+      <div class="title">
+        <h6>Recent Articles</h6>
+        <h3>
+          Innovation in Focus Stories <br><span>Updated From Lab</span>
+        </h3>
+      </div>
+      <div class="posts">
+        <div class="post-card">
+          <div class="image">
+            <img src="/assets/images/blog start.png" alt="Blog image" />
+          </div>
+          <div class="content" style="margin-top: -80px;">
+            <div>
+              <div>
+                <svg class="icon-arrow" width="16" height="16">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-calender"></use>
+                </svg>
+                <span>10 March, 2025</span>
+              </div>
+              <div>
+                <svg class="icon-arrow" width="16" height="16">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-tag"></use>
+                </svg>
+                <span>Biochemistry</span>
+              </div>
+            </div>
+            <hr />
+            <h6>
+              The Role of Medical Laboratories in Infectious Disease Testing
+            </h6>
+            <a href="#" class="read-more uppercase">
+              Read more
+              <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="post-card">
+          <div class="image">
+            <img src="/assets/images/blog start.png" alt="Blog image" />
+          </div>
+          <div class="content" style="margin-top: -80px;">
+            <div>
+              <div>
+                <svg class="icon-arrow" width="16" height="16">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-calender"></use>
+                </svg>
+                <span>10 March, 2025</span>
+              </div>
+              <div>
+                <svg class="icon-arrow" width="16" height="16">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-tag"></use>
+                </svg>
+                <span>Biochemistry</span>
+              </div>
+            </div>
+            <hr />
+            <h6>
+              The Role of Medical Laboratories in Infectious Disease Testing
+            </h6>
+            <a href="#" class="read-more uppercase">
+              Read more
+              <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="post-card">
+          <div class="image">
+            <img src="/assets/images/blog start.png" alt="Blog image" />
+          </div>
+          <div class="content" style="margin-top: -80px;">
+            <div>
+              <div>
+                <svg class="icon-arrow" width="16" height="16">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-calender"></use>
+                </svg>
+                <span>10 March, 2025</span>
+              </div>
+              <div>
+                <svg class="icon-arrow" width="16" height="16">
+                  <use xlink:href="/assets/icons/sprite.svg#icon-tag"></use>
+                </svg>
+                <span>Biochemistry</span>
+              </div>
+            </div>
+            <hr />
+            <h6>
+              The Role of Medical Laboratories in Infectious Disease Testing
+            </h6>
+            <a href="#" class="read-more uppercase">
+              Read more
+              <svg class="icon-arrow" width="16" height="16" fill="currentColor">
+                <use xlink:href="/assets/icons/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="top-contain">
+        <div class="left">
+          <h4> Need help on Emergency? Book Your Appointment Today. </h4>
+        </div>
+        <div class="right">
+          <a href="#" class="appointment-btn">Make Appointment</a>
+          <a href="#" class="appointment-btn secondary">Make Appointment</a>
+        </div>
+      </div>
+      <hr>
+      <div class="bottom-contain">
+        <div class="right flex-[1]">
+          <img src="/assets/icons/logo-dark.png" width="119" height="47" alt="">
+          <ul class="flex flex-col gap-y-5 pb-4 font-bold">
+            <li>
+              <p>5th Street, 21st Floor, New York, USA </p>
+            </li>
+            <li>
+              <p>themeht23@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                +91-234-567-8900
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="left flex-[3]">
+          <div class="contain">
+            <div class="flex-[1]">
+              <h6 class="font-bold mb-5">Quick Links</h6>
+              <ul class="flex flex-col gap-y-5 pb-4 font-bold">
+                <li>
+                  <p>About Us</p>
+                </li>
+                <li>
+                  <p>Contact Us</p>
+                </li>
+                <li>
+                  <p>
+                    Portfolio
+                  </p>
+                </li>
+                <li>Doctor Team</li>
+              </ul>
+
+            </div>
+            <div class="flex-[1]">
+              <h6 class="font-bold mb-5">Our Services</h6>
+              <ul class="flex flex-col gap-y-5 pb-4 font-bold">
+                <li>
+                  <p>Biochemistry Solution</p>
+                </li>
+                <li>
+                  <p>Pharmaceutical Research</p>
+                </li>
+                <li>
+                  <p>Pathologycam Testing</p>
+                </li>
+                <li>Chemical Research</li>
+              </ul>
+            </div>
+            <div class="flex-[2]">
+              <h6 class="font-bold mb-5">Newsletter</h6>
+              <ul class="flex flex-col gap-y-5 pb-4 font-bold">
+                <li>
+                  <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end
+                    component library.</p>
+                </li>
+                <form id="mc-form"
+                  class="flex items-center w-full max-w-md border border-gray-800 rounded-lg px-4 py-2">
+                  <input type="email" name="EMAIL" id="mc-email" placeholder="Email Address" required
+                    class="flex-grow h-12 bg-transparent text-white placeholder-gray-400 border-none focus:outline-none" />
+                  <button type="submit"
+                    class="ml-3 w-12 h-12 flex items-center justify-center bg-blue-600 rounded-lg hover:bg-blue-700 transition">
+                    <svg class="icon-arrow w-6 h-6 text-white" fill="currentColor" aria-hidden="true">
+                      <use xlink:href="/assets/icons/sprite.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="secondary-footer">
+        <div class="container">
+          <p class="text-sm text-center lg:text-left">
+            Copyright 2025 Labozu Theme By
+            <a href="#" class="text-blue-400 hover:underline">ThemeHt</a> | All Rights Reserved
+          </p>
+          <div class="right">
+            <a href="#">
+              <svg fill="currentColor">
+                <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg fill="currentColor">
+                <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg fill="currentColor">
+                <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg fill="currentColor">
+                <use xlink:href="/assets/icons/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="module" src="/src/main.ts"></script>
+  <!--  gsap 3  -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <!--  swiper 10  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</body>
+
+</html>

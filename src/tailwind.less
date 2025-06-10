@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "buttons.less";
+
+@theme {
+  --font-sans:
+    "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1280px;
+
+  --text-xs: 0.6875rem;
+  --text-xs--line-height: 0.9375rem;
+  --text-sm: 0.8125rem;
+  --text-sm--line-height: 1.1875rem;
+
+  --color-primary: var(--p);
+  --color-secondary: var(--s);
+  --color-base-100: var(--b1);
+  --color-base-200: var(--b2);
+  --color-base-300: var(--b3);
+  --color-base-content: var(--bc);
+  --color-info: var(--in);
+  --color-success: var(--su);
+  --color-warning: var(--wa);
+  --color-error: var(--er);
+
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
+
+  --animate-shine: shine 0.8s;
+
+  @keyframes burgerHover {
+    0% {
+      width: 100%;
+    }
+
+    50% {
+      width: 50%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  --animate-burger-hover-2: burgerHover 1s infinite ease-in-out alternate forwards 200ms;
+  --animate-burger-hover-4: burgerHover 1s infinite ease-in-out alternate forwards 400ms;
+  --animate-burger-hover-6: burgerHover 1s infinite ease-in-out alternate forwards 600ms;
+
+  @keyframes introXAnimation {
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  --animate-intro-x-animation: introXAnimation 0.4s ease-in-out forwards 0.33333s;
+
+  @keyframes caret-blink {
+
+    0%,
+    70%,
+    100% {
+      opacity: 1;
+    }
+
+    20%,
+    50% {
+      opacity: 0;
+    }
+  }
+
+  --animate-caret-blink: caret-blink 1.2s ease-out infinite;
+}

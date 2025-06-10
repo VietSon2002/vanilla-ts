@@ -1,0 +1,91 @@
+// components/_buttons.less
+
+.appointment-btn {
+    @apply relative inline-block px-6 py-4 bg-primary text-base-100 rounded cursor-pointer overflow-hidden z-0;
+
+    &::before {
+        content: "";
+        @apply absolute top-1/2 left-1/2 bg-secondary rounded-full;
+        width: 220%;
+        height: 220%;
+        transform: translate(-50%, 100%);
+        scale: 0 0;
+        transition:
+            transform 1s cubic-bezier(0.215, 0.61, 0.355, 1),
+            scale 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        z-index: -1;
+    }
+
+    &:hover::before {
+        transform: translate(-50%, -50%);
+        scale: 1 1;
+    }
+}
+
+.appointment-btn-secondary {
+    @apply relative inline-block px-6 py-4 bg-secondary text-base-100 rounded cursor-pointer overflow-hidden z-0;
+
+    &::before {
+        content: "";
+        @apply absolute top-1/2 left-1/2 bg-primary rounded-full;
+        width: 220%;
+        height: 220%;
+        transform: translate(-50%, 100%);
+        scale: 0 0;
+        transition:
+            transform 1s cubic-bezier(0.215, 0.61, 0.355, 1),
+            scale 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        z-index: -1;
+    }
+
+    &:hover::before {
+        transform: translate(-50%, -50%);
+        scale: 1 1;
+    }
+}
+
+
+.dropdown {
+    @apply bg-base-100 absolute z-30 flex w-44 flex-col rounded p-1 text-sm opacity-0 shadow transition-opacity duration-500 ease-in-out;
+
+    &.show {
+        @apply opacity-100;
+    }
+
+    >a {
+        @apply px-2 py-1;
+
+        &:hover {
+            @apply bg-base-200;
+        }
+    }
+}
+
+.social-btn {
+    @apply w-8 h-8 flex items-center justify-center rounded-full bg-base-200 border border-transparent transition-all duration-300 ease-in-out;
+
+    &:hover {
+        @apply bg-primary border-base-100;
+
+        .social-icon {
+            @apply fill-base-100;
+        }
+    }
+
+    .social-icon {
+        @apply w-4 h-4 fill-secondary transition-all duration-300 ease-in-out;
+    }
+}
+
+.read-more {
+    @apply inline-flex font-bold items-center gap-1 text-black transition-transform duration-300 ease-in-out;
+}
+
+.read-more:hover {
+    @apply !text-primary;
+    transform: scale(1.1);
+}
+
+.read-more .icon-arrow {
+    @apply w-4 h-4;
+}
