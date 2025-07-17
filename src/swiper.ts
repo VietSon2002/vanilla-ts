@@ -1,4 +1,3 @@
-import { space } from "postcss/lib/list";
 import { animationSlide } from "./gasp";
 
 export const setupSwiper = () => {
@@ -20,7 +19,7 @@ export const setupSwiper = () => {
       slideChangeTransitionStart: (el: any) => animationSlide(el.slides[el.activeIndex], 0),
     },
     autoplay: {
-      delay: 2500000,
+      delay: 250000,
     },
   };
   new Swiper(".mySwiper", {
@@ -39,7 +38,7 @@ export const setupSwiper = () => {
       clickable: true,
     },
     breakpoints: {
-      640: { slidesPerView: 1.2 },
+      640: { slidesPerView: 1 },
       768: { slidesPerView: 2 },
       1024: { slidesPerView: 3 },
       1280: { slidesPerView: 4 },
@@ -47,21 +46,35 @@ export const setupSwiper = () => {
   });
   new Swiper(".mySwiper-4", {
     ...defaultSetting,
-    slidesPerView: "auto", // <-- tạo khoảng cách giữa các slide
     loop: true,
-    centeredSlides: false,
-    spaceBetween: 24,
+    centeredSlides: true,
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
     breakpoints: {
-      640: { slidesPerView: 1.2 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-      1280: { slidesPerView: 4 },
+      0: {
+        slidesPerView: 1,
+        centeredSlides: true,
+        slidesOffsetBefore: 24,
+        slidesOffsetAfter: 24,
+      },
+      768: {
+        slidesPerView: 2,
+        centeredSlides: false,
+        slidesOffsetBefore: 24,
+        slidesOffsetAfter: 24,
+      },
+      1024: {
+        slidesPerView: 4,
+        centeredSlides: false,
+        slidesOffsetBefore: 0,
+        slidesOffsetAfter: 0,
+      },
     },
   });
+
   new Swiper('.client-swiper', {
     slidesPerView: 5,
     spaceBetween: 60,

@@ -1,11 +1,9 @@
-// components/_buttons.less
-
 .appointment-btn {
-    @apply relative inline-block px-6 py-4 bg-primary text-base-100 rounded cursor-pointer overflow-hidden z-0;
+    @apply relative inline-flex items-center px-6 py-4 bg-primary-500 text-base-0 rounded cursor-pointer overflow-hidden z-0;
 
     &::before {
         content: "";
-        @apply absolute top-1/2 left-1/2 bg-secondary rounded-full;
+        @apply absolute top-1/2 left-1/2 bg-base-900 rounded-full;
         width: 220%;
         height: 220%;
         transform: translate(-50%, 100%);
@@ -23,11 +21,11 @@
 }
 
 .appointment-btn-secondary {
-    @apply relative inline-block px-6 py-4 bg-secondary text-base-100 rounded cursor-pointer overflow-hidden z-0;
+    @apply relative inline-block px-6 py-4 bg-base-900 text-base-0 rounded cursor-pointer overflow-hidden z-0;
 
     &::before {
         content: "";
-        @apply absolute top-1/2 left-1/2 bg-primary rounded-full;
+        @apply absolute top-1/2 left-1/2 bg-primary-500 rounded-full;
         width: 220%;
         height: 220%;
         transform: translate(-50%, 100%);
@@ -46,7 +44,7 @@
 
 
 .dropdown {
-    @apply bg-base-100 absolute z-30 flex w-44 flex-col rounded p-1 text-sm opacity-0 shadow transition-opacity duration-500 ease-in-out;
+    @apply bg-base-0 absolute z-30 flex w-44 flex-col rounded p-1 text-sm opacity-0 shadow transition-opacity duration-500 ease-in-out;
 
     &.show {
         @apply opacity-100;
@@ -65,15 +63,15 @@
     @apply w-8 h-8 flex items-center justify-center rounded-full bg-base-200 border border-transparent transition-all duration-300 ease-in-out;
 
     &:hover {
-        @apply bg-primary border-base-100;
+        @apply bg-primary-500 border-base-0;
 
         .social-icon {
-            @apply fill-base-100;
+            @apply fill-base-0;
         }
     }
 
     .social-icon {
-        @apply w-4 h-4 fill-secondary transition-all duration-300 ease-in-out;
+        @apply w-4 h-4 fill-base-900 transition-all duration-300 ease-in-out;
     }
 }
 
@@ -82,7 +80,7 @@
 }
 
 .read-more:hover {
-    @apply !text-primary;
+    @apply !text-primary-500;
     transform: scale(1.1);
 }
 

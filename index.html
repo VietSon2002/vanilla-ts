@@ -120,13 +120,11 @@
       </div>
     </div>
     <div class="header-wrap">
-      <div>
-        <div>
-          <img src="/assets/icons/logo.svg" alt="FDI Logo" />
-        </div>
+      <div class="flex items-center gap-4">
+        <img src="/assets/icons/logo.svg" alt="FDI Logo" />
         <nav class="nav-links">
           <div class="nav-item">
-            <button data-dropdown="" class="nav-button">
+            <button data-dropdown="hover" class="nav-button">
               HOME
               <svg class="nav-icon">
                 <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
@@ -140,7 +138,7 @@
             </template>
           </div>
           <div class="nav-item">
-            <button data-dropdown="" class="nav-button">
+            <button data-dropdown="hover" class="nav-button">
               PAGES
               <svg class="nav-icon">
                 <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
@@ -154,7 +152,7 @@
             </template>
           </div>
           <div class="nav-item">
-            <button data-dropdown="" class="nav-button">
+            <button data-dropdown="hover" class="nav-button">
               SHOP
               <svg class="nav-icon">
                 <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
@@ -168,7 +166,7 @@
             </template>
           </div>
           <div class="nav-item">
-            <button data-dropdown="" class="nav-button">
+            <button data-dropdown="hover" class="nav-button">
               SERVICES
               <svg class="nav-icon">
                 <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
@@ -182,7 +180,7 @@
             </template>
           </div>
           <div class="nav-item">
-            <button data-dropdown="" class="nav-button">
+            <button data-dropdown="hover" class="nav-button">
               RESEARCH
               <svg class="nav-icon">
                 <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
@@ -196,7 +194,7 @@
             </template>
           </div>
           <div class="nav-item">
-            <button data-dropdown="" class="nav-button">
+            <button data-dropdown="hover" class="nav-button">
               BLOGS
               <svg class="nav-icon">
                 <use xlink:href="/assets/icons/sprite.svg#icon-arrow-down"></use>
@@ -210,7 +208,7 @@
             </template>
           </div>
           <div class="nav-item">
-            <button data-dropdown="" class="nav-button">
+            <button data-dropdown="hover" class="nav-button">
               CONTACT
             </button>
             <template>
@@ -221,36 +219,53 @@
             </template>
           </div>
         </nav>
-
       </div>
-      <div class="social-actions">
-        <svg class="icon-search me-4">
-          <use xlink:href="/assets/icons/sprite.svg#icon-search"></use>
-        </svg>
-
-        <div class="social">
-          <a href="#" class="social-btn">
-            <svg class="social-icon">
-              <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+      <div class="right-contain">
+        <div>
+          <button class="hamburger" data-dropdown="click">
+            <svg class="w-6 h-6 fill-black">
+              <use xlink:href="/assets/icons/sprite.svg#icon-hamburger"></use>
             </svg>
-          </a>
-
-          <a href="#" class="social-btn">
-            <svg class="social-icon">
-              <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
-            </svg>
-          </a>
-
-          <a href="#" class="social-btn">
-            <svg class="social-icon">
-              <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
-            </svg>
-          </a>
+          </button>
+          <template>
+            <a href="#">HOME 01</a>
+            <a href="#">HOME 02</a>
+            <a href="#">HOME 03</a>
+            <a href="#">HOME 04</a>
+          </template>
         </div>
 
-        <a href="#" class="appointment-btn">Make Appointment</a>
+
+        <div class="social-actions">
+          <svg class="icon-search me-4 hidden md:flex">
+            <use xlink:href="/assets/icons/sprite.svg#icon-search"></use>
+          </svg>
+
+          <div class="social">
+            <a href="#" class="social-btn">
+              <svg class="social-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="social-btn">
+              <svg class="social-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-X"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="social-btn">
+              <svg class="social-icon">
+                <use xlink:href="/assets/icons/sprite.svg#icon-linkin"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="button-contain"><a href="#" class="appointment-btn">Make Appointment</a></div>
+        </div>
       </div>
     </div>
+
   </header>
 
   <section class="hero-section-start">
@@ -369,8 +384,6 @@
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
@@ -469,7 +482,7 @@
     <div class="swiper-contain">
       <div class="swiper mySwiper-4 ">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide justify-items-center">
             <div class="service-item">
               <div class="image-wrapper">
                 <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
@@ -496,7 +509,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide justify-items-center">
             <div class="service-item">
               <div class="image-wrapper">
                 <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
@@ -523,7 +536,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide justify-items-center">
             <div class="service-item">
               <div class="image-wrapper">
                 <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
@@ -550,7 +563,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide justify-items-center">
             <div class="service-item">
               <div class="image-wrapper">
                 <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
@@ -577,7 +590,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide justify-items-center">
             <div class="service-item">
               <div class="image-wrapper">
                 <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
@@ -604,7 +617,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide justify-items-center">
             <div class="service-item">
               <div class="image-wrapper">
                 <img src="/assets/images/ima-demo.png" alt="Pharmaceutical Research" />
@@ -685,6 +698,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
   <section class="marquee-start pb-14">
